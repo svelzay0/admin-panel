@@ -42,7 +42,7 @@
             v-model="orderItem.isRightWheel"
             :label="'Правый руль'"
           />
-        </v-col> 
+        </v-col>
         <v-col cols="4">
           <v-checkbox
             class="pa-0 ma-0"

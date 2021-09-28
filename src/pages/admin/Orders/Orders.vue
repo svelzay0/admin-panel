@@ -85,7 +85,7 @@
                 loading-text="Загрузка заказов, пожалуйста подождите..."
                 @page-count="pageCount = $event"
               >
-                <template #item.info="{ item }">
+                <template #[`item.info`]="{ item }">
                   <v-row>
                     <v-col cols="12" class="pb-0 mb-0">
                       г. {{ item.cityId ? item.cityId.name : '-' }}
@@ -98,7 +98,7 @@
                     </v-col>
                   </v-row>
                 </template>
-                <template #item.car="{ item }">
+                <template #[`item.car`]="{ item }">
                   <v-row>
                     <v-col cols="12"  class="ma-0 pa-0">
                       Статус <b>{{ item.orderStatusId ? item.orderStatusId.name : '-' }}</b>
@@ -117,7 +117,7 @@
                     </v-col>
                   </v-row>
                 </template>
-                <template #item.additionals="{ item }">
+                <template #[`item.additionals`]="{ item }">
                   <v-checkbox
                     class="pa-0 ma-0 pt-6"
                     v-model="item.isFullTank"
@@ -137,19 +137,19 @@
                     disabled
                   />
                 </template>
-                <template #item.price="{ item }">
+                <template #[`item.price`]="{ item }">
                   <div>
                     <v-card-title>{{ item.price ? item.price + ' ₽' : '-' }}</v-card-title>
                   </div>
                 </template>
-                <template #item.photo="{ item }">
+                <template #[`item.photo`]="{ item }">
                   <img
                     class="model__car_image"
                     :src="getImgPath(item.carId)"
                     alt=""
                   />
                 </template>
-                <template #item.actions="{ item }">
+                <template #[`item.actions`]="{ item }">
                   <v-row>
                     <v-col cols="12">
                       <v-btn-toggle
@@ -197,7 +197,7 @@
                 </template>
               </v-data-table>
             </v-col>
-            <v-col cols="6" class="pl-10 pr-10 pb-16">
+            <v-col cols="6" class="order__table_circles pl-10 pr-10 pb-16">
               <v-pagination
                 v-model="page"
                 :length="pageCount"
