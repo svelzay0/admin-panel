@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d2084b4"],{a3d0:function(n,a,e){"use strict";e.r(a);var r=function(){var n=this,a=n.$createElement,e=n._self._c||a;return e("car-form",{attrs:{"model-id":n.$route.params.id}})},t=[],o=e("4b3a"),c={components:{CarForm:o["a"]}},s=c,u=e("2877"),l=Object(u["a"])(s,r,t,!1,null,null,null);a["default"]=l.exports}}]);
-//# sourceMappingURL=chunk-2d2084b4.c63d4d4c.js.map
